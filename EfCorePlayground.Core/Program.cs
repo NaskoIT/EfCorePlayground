@@ -1,5 +1,6 @@
 ﻿using EfCorePlayground.Core.Business;
-using System;
+using EfCorePlayground.Core.Mappings;
+using EfCorePlayground.Core.Models;
 
 namespace EfCorePlayground.Core
 {
@@ -8,6 +9,8 @@ namespace EfCorePlayground.Core
         public static void Main(string[] args)
         {
             DataSeeder.Seed();
+
+            AutoMapperConfig.RegisterMappings(typeof(OwnerViewModel).Assembly);
         }
     }
 }
