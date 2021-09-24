@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EfCorePlayground.Core.Business;
+using System;
 
 namespace EfCorePlayground.Core
 {
@@ -6,7 +7,7 @@ namespace EfCorePlayground.Core
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            DataSeeder.Seed();
         }
     }
 }
