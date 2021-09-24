@@ -13,6 +13,7 @@ namespace EfCorePlayground.Core.Tests.Model
 
         public void CreateMappings(IProfileExpression configuration)
         {
+            // Keep in mind that System.InvalidOperationException: Nullable object must have a value can be thrown if the owner don't have any cars
             configuration.CreateMap<Owner, OwnerViewModelFirstOrDefault>()
                 .ForMember(
                     m => m.NewestCarYear,
