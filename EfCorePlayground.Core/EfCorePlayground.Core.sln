@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30711.63
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EfCorePlayground.Core", "EfCorePlayground.Core.csproj", "{1780BF3C-E0AC-401A-BF24-3A82FD4C1DD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EfCorePlayground.Data", "..\EfCorePlayground.Data\EfCorePlayground.Data.csproj", "{05282466-B7AC-403A-A17D-DD70C8515B84}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1780BF3C-E0AC-401A-BF24-3A82FD4C1DD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1780BF3C-E0AC-401A-BF24-3A82FD4C1DD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1780BF3C-E0AC-401A-BF24-3A82FD4C1DD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1780BF3C-E0AC-401A-BF24-3A82FD4C1DD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05282466-B7AC-403A-A17D-DD70C8515B84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05282466-B7AC-403A-A17D-DD70C8515B84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05282466-B7AC-403A-A17D-DD70C8515B84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05282466-B7AC-403A-A17D-DD70C8515B84}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BCC0D11F-9739-479E-8F46-01E1F424743D}
+	EndGlobalSection
+EndGlobal
