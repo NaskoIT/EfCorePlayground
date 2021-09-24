@@ -1,5 +1,6 @@
-﻿using EfCorePlayground.Core.Business;
-using EfCorePlayground.Core.Mappings;
+﻿using EfCorePlayground.Common.Mappings;
+using EfCorePlayground.Core.Business;
+using EfCorePlayground.Core.Tests;
 using System.Reflection;
 
 namespace EfCorePlayground.Core
@@ -11,6 +12,8 @@ namespace EfCorePlayground.Core
             DataSeeder.Seed();
 
             AutoMapperConfig.RegisterMappings(Assembly.GetExecutingAssembly());
+
+            FirstOrDefaultVsSelectTest.Run();
         }
     }
 }

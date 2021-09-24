@@ -1,4 +1,4 @@
-﻿namespace EfCorePlayground.Core.Mappings
+﻿namespace EfCorePlayground.Common.Mappings
 {
     public interface IMapTo<T>
     {

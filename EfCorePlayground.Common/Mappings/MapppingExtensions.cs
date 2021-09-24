@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using AutoMapper;
 using AutoMapper.QueryableExtensions;
 
-namespace EfCorePlayground.Core.Mappings
+namespace EfCorePlayground.Common.Mappings
 {
     public static class MappingExtensions
     {

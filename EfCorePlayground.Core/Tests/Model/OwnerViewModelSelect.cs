@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace EfCorePlayground.Core.Tests.Model
 {
-    public class OwnerViewModelFirstOrDefault : IMapFrom<Owner>, IHaveCustomMappings
+    public class OwnerViewModelSelect : IMapFrom<Owner>, IHaveCustomMappings
     {
         public string Name { get; set; }
 
@@ -13,13 +13,14 @@ namespace EfCorePlayground.Core.Tests.Model
 
         public void CreateMappings(IProfileExpression configuration)
         {
-            configuration.CreateMap<Owner, OwnerViewModelFirstOrDefault>()
+            configuration.CreateMap<Owner, OwnerViewModelSelect>()
                 .ForMember(
                     m => m.NewestCarYear,
                     y => y.MapFrom(
                         s => s.Cars
                             .OrderByDescending(c => c.Year)
-                            .FirstOrDefault().Year));
+                            .Select(c => c.Year)
+                            .FirstOrDefault()));
         }
     }
 }

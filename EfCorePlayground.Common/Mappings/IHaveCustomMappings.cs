@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 
-namespace EfCorePlayground.Core.Mappings
+namespace EfCorePlayground.Common.Mappings
 {
     public interface IHaveCustomMappings
     {

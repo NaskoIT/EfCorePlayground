@@ -19,6 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\EfCorePlayground.Common\EfCorePlayground.Common.csproj" />
     <ProjectReference Include="..\EfCorePlayground.Data\EfCorePlayground.Data.csproj" />
   </ItemGroup>
 
